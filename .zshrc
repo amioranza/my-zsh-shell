@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/local/go/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ghost/.oh-my-zsh
+export ZSH=/home/`whoami`/.oh-my-zsh
 
 export TERM="xterm-256color"
 
