@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/local/go/bin
 
+# GOPATH
+export GOPATH=$HOME/Projects/golang
+
 # Path to your oh-my-zsh installation.
 export ZSH=/home/`whoami`/.oh-my-zsh
 
@@ -18,7 +21,7 @@ POWERLEVEL9K_BATTERY_ICON='\uf1e6 '
 
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time background_jobs ram load battery)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs ram load battery)
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='\ue795\uf0da\uf0da\uf0da '
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -128,6 +131,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vi=vim
+alias vi="vim"
+alias kgc="kubectl config get-contexts"
+alias kuc="kubectl config use-context"
+alias kctl="kubectl"
+alias kcfg="kubectl config"
+alias clr="clear"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
